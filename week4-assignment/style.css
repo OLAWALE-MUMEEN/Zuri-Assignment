@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+  }
+  p {
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+  h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+  }
+  h1,p {
+    margin: 1.3em 0;
+  }
+  .container {
+    background-color: #F2F2F2;
+     height: 100vh;
+    padding: 0 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards {
+    display: flex;
+    align-items: center; 
+     justify-content: center;
+  }
+  /* cards-item  */
+  .cards-item {
+    padding: 1em;
+  }
+  .sedans {
+    background-color: #E28525;
+        border-top-left-radius: .5em;
+    border-bottom-left-radius: .5em;
+  }
+  .suvs {
+    background-color: #016972;
+  }
+  .luxury {
+      background-color: #00403F;
+          border-top-right-radius: .5em;
+    border-bottom-right-radius: .5em;
+  
+  }
+  /* Button */
+  .btn {
+    margin-top: 3em;
+    padding: 1em 2em;
+    border-radius: 3em;
+    border: 1px solid whitesmoke;
+    background-color: hsl(0, 0%, 95%);
+  }
+  .btn-sedans {
+    color: #E28525;
+  }
+  .btn-suvs {
+    color: #016972;
+  }
+  .btn-luxury {
+    color: #00403F;
+  }
+  /* media query */
+  @media screen and (max-width: 500px) {
+        .cards {
+          flex-direction:  column;
+        } 
+    .sedans,
+    .luxury {
+      border-radius: 0;
+    }
+  }
